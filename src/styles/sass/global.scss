@@ -1,0 +1,22 @@
+@use 'var';
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	color: unset;
+	text-decoration: unset;
+}

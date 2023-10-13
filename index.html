@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Github Profiles</title>
+
+		<link
+			rel="shortcut icon"
+			href="./src/images/github-logo.png"
+			type="image/x-icon"
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./src/styles/css/global.css" />
+		<link rel="stylesheet" href="./src/styles/css/styles.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<img
+				src="./src/images/github-logo.png"
+				alt="Github Logo"
+				class="header__logo"
+			/>
+
+			<h1 class="header__title">
+				Github
+				<span class="header__title header__title--regular"
+					>profiles</span
+				>
+			</h1>
+		</header>
+
+		<main>
+			<div class="user-container">
+				<img
+					src="https://www.tenforums.com/geek/gars/images/2/types/thumb_15951118880user.png"
+					alt="Dummy Image"
+					class="user-container__avatar"
+				/>
+
+				<div>
+					<p class="user-container__name">Usuário do Github</p>
+					<p class="user-container__description">
+						Bio do usuário do Github
+					</p>
+				</div>
+			</div>
+
+			<div class="tabs">
+				<div class="tabs__tab">
+					Repos <span class="tabs__tab__count">0</span>
+				</div>
+				<div class="tabs__tab">
+					Starred <span class="tabs__tab__count">0</span>
+				</div>
+			</div>
+
+			<section class="list-section">
+				<form class="search-input-container" id="search-form">
+					<div class="search-input-wrapper">
+						<span class="search-input__icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="w-6 h-6"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+								/>
+							</svg>
+						</span>
+
+						<input
+							type="text"
+							placeholder="Filter by name"
+							name="search"
+							class="search-input"
+						/>
+					</div>
+				</form>
+
+				<ul id="repos-list" class="list"></ul>
+			</section>
+		</main>
+
+		<script type="module" src="./src/scripts/js/index.js"></script>
+	</body>
+</html>

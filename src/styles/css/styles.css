@@ -1,0 +1,143 @@
+.header {
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  background-color: #24292e;
+}
+.header .header__logo {
+  width: 28px;
+  margin-right: 10px;
+}
+.header .header__title {
+  font-size: 22px;
+  color: #ffffff;
+}
+.header .header__title.header__title--regular {
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 25px 15px 50px;
+}
+.user-container .user-container__avatar {
+  width: 75px;
+  border-radius: 50%;
+}
+.user-container .user-container__name {
+  font-weight: 700;
+  font-size: 20px;
+  color: #24292e;
+  margin-bottom: 4px;
+}
+.user-container .user-container__description {
+  font-size: 14px;
+  color: #5c646d;
+}
+
+.tabs {
+  display: flex;
+}
+.tabs .tabs__tab {
+  position: relative;
+  width: 100%;
+  padding-bottom: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  color: #666666;
+  border-bottom: 2px solid #e3e3e3;
+}
+.tabs .tabs__tab.tabs__tab--selected {
+  border-bottom: 5px solid #e36209;
+  font-weight: 700;
+}
+.tabs .tabs__tab .tabs__tab__count {
+  padding: 2px 11px;
+  color: #5c646d;
+  border-radius: 100px;
+  font-size: 14px;
+  background-color: #e3e3e3;
+  font-weight: 700;
+}
+
+.search-input-container {
+  padding: 30px;
+  padding-bottom: 10px;
+}
+.search-input-container .search-input-wrapper {
+  position: relative;
+}
+.search-input-container .search-input-wrapper .search-input {
+  padding: 10px;
+  padding-left: 40px;
+  border-radius: 5px;
+  border: 1px solid #999999;
+  outline: none;
+  height: 100%;
+  width: 100%;
+}
+.search-input-container .search-input-wrapper .search-input:placeholder {
+  color: #586069;
+  font-family: "Open Sans", sans-serif;
+}
+.search-input-container .search-input-wrapper .search-input__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8px;
+}
+.search-input-container .search-input-wrapper .search-input__icon svg {
+  width: 22px;
+  stroke: #999999;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  max-height: 540px;
+}
+.list .list__item {
+  border-bottom: 1px solid #e3e3e3;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.list .list__item__title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2d94d9;
+}
+.list .list__item__title .list__item__title--regular {
+  font-weight: 400;
+}
+.list .list__item__description {
+  font-size: 14px;
+  color: #666666;
+}
+.list .list__item__metadata-container {
+  display: flex;
+  gap: 15px;
+}
+.list .list__item__metadata {
+  font-size: 14px;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.list .list__item__metadata .list__item__metadata__icon {
+  width: 18px;
+  filter: invert(0.5);
+}
+
+/*# sourceMappingURL=styles.css.map */
